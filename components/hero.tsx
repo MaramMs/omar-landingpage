@@ -10,14 +10,14 @@ export function Hero() {
       <div className="grid items-stretch gap-6 lg:grid-cols-2">
         {/* Portrait */}
         <div className="border-gold-gradient relative min-h-72 overflow-hidden rounded-2xl lg:min-h-[28rem]">
-          <Image
+          {/* <Image
             src="/images/notary-portrait.png"
             alt="عمر المشعلي، موثق معتمد ومأذون عقود أنكحة"
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover object-top"
-          />
+          /> */}
         </div>
 
         {/* Copy */}

@@ -45,10 +45,10 @@ export function SiteFooter() {
     >
       <div className="grid gap-8 p-8 text-right md:grid-cols-1 lg:grid-cols-1">
                   <div>
-          <h3 className="font-heading text-lg font-bold text-gold-soft text-center">
+          <h3 className="font-heading text-lg font-bold text-gold-soft text-right md:text-center">
             معلومات التواصل
           </h3>
-          <ul className="flex justify-center gap-10 align-middle mt-4  text-sm text-foreground/75">
+          <ul className="flex flex-col md:flex-row justify-center gap-10 align-middle mt-4  text-sm text-foreground/75">
             <li className="flex items-center  gap-2">
               <Phone className="size-4 text-gold" aria-hidden="true" />
               <span>جوال: 966 56 559 3414+</span>

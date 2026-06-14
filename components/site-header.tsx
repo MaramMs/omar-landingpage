@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const navItems = [
@@ -14,19 +15,21 @@ export function SiteHeader() {
   return (
     <header className="border-gold-gradient overflow-hidden  bg-navy-deep shadow-lg mb-10">
       {/* Top strip */}
-      <div className="border-b border-gold/20 px-6 py-2 text-center  bg-[#a5957d]">
+  <div className="border-b border-gold/20 px-6 py-2 text-center  bg-[#a5957d]">
         <p className="text-xs font-medium tracking-wide text-black">
           خدمات معتمدة من وزارة العدل السعودية
         </p>
       </div>
 
+  <div className='mx-auto max-w-4xl'>
       {/* Main nav */}
       <nav className="flex items-center justify-between gap-4 px-5 py-4">
         {/* Brand */}
         <Link href="#home" className="shrink-0 leading-none">
-          <span className="font-heading text-2xl font-bold text-gold-gradient">
+          {/* <span className="font-heading text-2xl font-bold text-gold-gradient">
             عمر المشعلي
-          </span>
+          </span> */}
+          <Image src='/images/logo.png' alt='عمر المشعلي' width={150} height={150}/>
         </Link>
 
         {/* Links */}
@@ -51,6 +54,7 @@ export function SiteHeader() {
           احجز الآن
         </Link>
       </nav>
+  </div>
     </header>
   )
 }

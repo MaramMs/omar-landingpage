@@ -23,7 +23,7 @@ export function ServicesSection() {
     <section id="services" className="px-2 py-14 sm:py-20">
       <SectionHeading>خدماتنا العدلية المتكاملة</SectionHeading>
 
-      <div className="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-2">
+      <div className="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-2 ">
         {services.map((service) => {
           const Icon = service.icon
           return (

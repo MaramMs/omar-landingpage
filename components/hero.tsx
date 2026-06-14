@@ -10,19 +10,19 @@ export function Hero() {
       <div className="grid items-stretch gap-6 lg:grid-cols-2">
         {/* Portrait */}
         <div className="border-gold-gradient relative min-h-72 overflow-hidden rounded-2xl lg:min-h-[28rem]">
-          {/* <Image
-            src="/images/notary-portrait.png"
+          <Image
+            src="/images/hero.jpeg"
             alt="عمر المشعلي، موثق معتمد ومأذون عقود أنكحة"
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover object-top"
-          /> */}
+            className="object-cover "
+          />
         </div>
 
         {/* Copy */}
         <div className="flex flex-col justify-center px-2 py-4 text-right sm:px-6">
-          <h1 className="font-heading text-3xl font-bold leading-tight text-balance sm:text-4xl lg:text-[2.75rem]">
+          <h1 className="font-heading text-3xl font-bold leading-[60px] md:leading-[86px] text-balance sm:text-4xl lg:text-[2.75rem]">
             <span className="text-gold-gradient">عمر المشعلي</span>
             <span className="text-foreground"> | موثق</span>
             <br />

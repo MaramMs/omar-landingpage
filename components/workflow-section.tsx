@@ -11,20 +11,31 @@ const steps = [
   {
     icon: CalendarCheck,
     title: 'حدد طلبك ووقتك',
-    description:
-      'يتم الاتفاق على نوع الخدمة وتحديد الموعد والمكان المناسب لك.',
+    description: 'يتم الاتفاق على نوع الخدمة وتحديد الموعد والمكان المناسب لك.',
   },
   {
     icon: Award,
     title: 'إنجاز فوري',
-    description:
-      'إتمام الخدمة وتوثيقها رسمياً عبر أنظمة وزارة العدل.',
+    description: 'إتمام الخدمة وتوثيقها رسمياً عبر أنظمة وزارة العدل.',
   },
 ]
+
+const floatDelays = ['0s', '0.4s', '0.8s']
 
 export function WorkflowSection() {
   return (
     <section id="workflow" className="px-2 py-14 sm:py-20">
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50%       { transform: translateY(-10px); }
+        }
+
+        .float-icon {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
+
       <SectionHeading>آلية العمل: خطوات بسيطة لخدمة فورية</SectionHeading>
 
       <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center justify-center gap-6 md:flex-row">
@@ -33,7 +44,10 @@ export function WorkflowSection() {
           return (
             <Fragment key={step.title}>
               <div className="flex flex-col items-center text-center md:max-w-48">
-                <span className="border-gold-gradient flex size-16 items-center justify-center rounded-full bg-card text-gold shadow-md">
+                <span
+                  className="float-icon border-gold-gradient flex size-16 items-center justify-center rounded-full bg-card text-gold shadow-md"
+                  style={{ animationDelay: floatDelays[index] }}
+                >
                   <Icon className="size-7" aria-hidden="true" />
                 </span>
                 <h3 className="mt-4 font-heading text-base font-bold text-gold-soft">

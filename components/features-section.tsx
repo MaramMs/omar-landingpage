@@ -69,7 +69,7 @@ export function FeaturesSection() {
         }
       `}</style>
 
-      <div className="mx-auto max-w-6xl px-2 py-14 sm:py-20 sm:px-6">
+      <div className="mx-auto  p-4  sm:px-8 lg:px-12 py-14 sm:py-20 ">
         <SectionHeading>لماذا تختارنا للخدمات العدلية؟</SectionHeading>
 
         <div className="mx-auto mt-12 grid max-w-5xl gap-8 sm:grid-cols-2 lg:grid-cols-4">

@@ -24,7 +24,7 @@ const floatDelays = ['0s', '0.4s', '0.8s']
 
 export function WorkflowSection() {
   return (
-    <section id="workflow" className="px-2 py-14 sm:py-20">
+    <section id="workflow" className="py-14 sm:py-20 p-4  sm:px-8 lg:px-12">
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
@@ -38,7 +38,7 @@ export function WorkflowSection() {
 
       <SectionHeading>آلية العمل: خطوات بسيطة لخدمة فورية</SectionHeading>
 
-      <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center justify-center gap-6 md:flex-row">
+      <div className="mx-auto mt-12 flex  flex-col items-center justify-center gap-[96px] md:flex-row">
         {steps.map((step, index) => {
           const Icon = step.icon
           return (

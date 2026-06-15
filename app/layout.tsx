@@ -1,17 +1,18 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Cairo, Amiri } from 'next/font/google'
+import { Tajawal, Cairo } from 'next/font/google'
 import './globals.css'
 
 const cairo = Cairo({
-  variable: '--font-cairo',
-  subsets: ['arabic', 'latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
+  subsets: ['arabic'],
+  weight: ['400', '600', '700', '800'],
+  variable: '--font-heading',
 })
-const amiri = Amiri({
-  variable: '--font-amiri',
-  subsets: ['arabic', 'latin'],
-  weight: ['400', '700'],
+
+const tajawal = Tajawal({
+  subsets: ['arabic'],
+  weight: ['400', '500', '700'],
+  variable: '--font-body',
 })
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ export default function RootLayout({
     <html
       lang="ar"
       dir="rtl"
-      className={`${cairo.variable} ${amiri.variable} bg-marble`}
+      className={`${tajawal.variable} ${cairo.variable} bg-marble`}
     >
       <body className="font-sans antialiased bg-marble min-h-screen">
         {children}

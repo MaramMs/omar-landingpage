@@ -9,7 +9,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-10 px-4 sm:px-8 lg:px-12">
+    <section className="">
       <div className="mx-auto max-w-6xl rounded-3xl bg-gold-gradient p-[2px] shadow-2xl shadow-gold/10">
         <div className="rounded-[calc(1.5rem-2px)] bg-navy-deep px-6 py-12 sm:px-12">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

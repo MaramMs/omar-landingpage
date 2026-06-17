@@ -6,7 +6,8 @@ export function Hero() {
   return (
     <section
       id="home"
-      style={{ backgroundImage: "url('/images/bg-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center',padding:'52px' }}
+      className='p-[16px] md:p-[52px]'
+      style={{ backgroundImage: "url('/images/bg-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}
     >
      <div       className="relative overflow-hidden rounded-3xl border border-white/5 shadow-2xl  min-h-[560px] lg:min-h-[620px]"
      >
@@ -71,21 +72,21 @@ export function Hero() {
           {/* Feature strip */}
           <div className="mt-10 flex flex-wrap gap-6 border-t border-white/10 pt-8 justify-start">
             <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
+                <Scale className="h-5 w-5" />
+              </div>
               <div className="flex flex-col text-right">
                 <span className="text-sm font-bold text-foreground">توثيق شرعي</span>
                 <span className="text-xs text-foreground/60">بموجب الأنظمة</span>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
-                <Scale className="h-5 w-5" />
-              </div>
             </div>
             <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
+                <FileText className="h-5 w-5" />
+              </div>
               <div className="flex flex-col text-right">
                 <span className="text-sm font-bold text-foreground">عقود أنكحة</span>
                 <span className="text-xs text-foreground/60">إجراءات ميسرة</span>
-              </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
-                <FileText className="h-5 w-5" />
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ const floatDelays = ['0s', '0.4s', '0.8s']
 
 export function WorkflowSection() {
   return (
-    <section id="workflow" className="py-14 sm:py-20 p-4  sm:px-8 lg:px-12">
+    <section id="workflow" className="py-14 sm:py-20 p-4  sm:px-8 lg:px-12 bg-card">
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }

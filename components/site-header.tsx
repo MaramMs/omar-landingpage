@@ -13,7 +13,7 @@ const navItems = [
 
 export function SiteHeader() {
   return (
-    <header className="border-gold-gradient overflow-hidden  bg-navy-deep shadow-lg mb-10 max-h-[100px]">
+    <header className="border-gold-gradient overflow-hidden  bg-navy-deep shadow-lg  max-h-[100px]">
       {/* Top strip */}
   <div className="border-b border-gold/20 px-6 py-1 text-center  bg-[#a5957d] hidden">
         <p className="text-xs font-medium tracking-wide text-black">

@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-heading), 'Cairo Fallback', sans-serif;
-  --font-sans: var(--font-sans), 'Tajawal Fallback', sans-serif;
-  --font-mono: var(--font-sans), 'Tajawal Fallback', sans-serif;
+  --font-heading: var(--font-cairo), 'Cairo Fallback', sans-serif;
+  --font-sans: var(--font-tajawal), 'Tajawal Fallback', sans-serif;
+  --font-mono: var(--font-tajawal), 'Tajawal Fallback', sans-serif;
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-navy-deep: var(--navy-deep);

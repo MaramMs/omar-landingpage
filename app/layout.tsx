@@ -6,13 +6,13 @@ import './globals.css'
 const cairo = Cairo({
   subsets: ['arabic'],
   weight: ['400', '600', '700', '800'],
-  variable: '--font-heading',
+  variable: '--font-cairo',
 })
 
 const tajawal = Tajawal({
   subsets: ['arabic'],
   weight: ['400', '500', '700'],
-  variable: '--font-body',
+  variable: '--font-tajawal',
 })
 
 export const metadata: Metadata = {

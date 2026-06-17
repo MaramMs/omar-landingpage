@@ -64,9 +64,14 @@ export function FeaturesSection() {
           background: var(--card, #0a1628);
         }
 
-        .feature-card:hover .rotating-border-icon {
-          transform: rotate(360deg);
-        }
+      @keyframes spin-icon {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating-border-icon {
+  animation: spin-icon 3s linear infinite;
+}
       `}</style>
 
       <div className="mx-auto  p-4  sm:px-8 lg:px-12 py-14 sm:py-20 ">

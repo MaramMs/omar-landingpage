@@ -34,16 +34,18 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-sm font-medium text-gold w-fit mb-6  shadow-[0_0_15px_rgba(var(--gold-rgb),0.1)]">
             <ShieldCheck className="h-4 w-4" />
-            <span>معتمد من وزارة العدل السعودية</span>
+            <span >   موثق  ومعتمد من وزارة العدل</span>
           </div>
 
           {/* Heading */}
+
+          <Image src="/images/logoSite.png" alt='text' width={500} height={200} className='lg:w-[900px] h-[200px] w-[200px] object-cover '/>
           <h1 className="font-heading text-4xl font-black leading-[1.4] sm:text-5xl lg:text-[3.2rem] lg:leading-[1.5]">
-            <span className="text-gold-gradient block mb-1">
+            {/* <span className="text-gold-gradient block mb-1">
               عمر المشعلي |{" "}
               <span className="text-foreground">موثق</span>
-            </span>
-            <span className="text-foreground block">معتمد ومأذون عقود أنكحة</span>
+            </span> */}
+            <span className="text-foreground block"> موثق معتمد ومسجل عقاري  ومأذون شرعي </span>
           </h1>
 
           {/* Body */}
@@ -76,8 +78,17 @@ export function Hero() {
                 <Scale className="h-5 w-5" />
               </div>
               <div className="flex flex-col text-right">
-                <span className="text-sm font-bold text-foreground">توثيق شرعي</span>
-                <span className="text-xs text-foreground/60">بموجب الأنظمة</span>
+                <span className="text-sm font-bold text-foreground"> موثق معتمد</span>
+                <span className="text-xs text-foreground/60">  من وزارة العدل</span>
+              </div>
+            </div>
+             <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
+                <Scale className="h-5 w-5" />
+              </div>
+              <div className="flex flex-col text-right">
+                <span className="text-sm font-bold text-foreground"> مسجل عقاري</span>
+                <span className="text-xs text-foreground/60">  معتمد </span>
               </div>
             </div>
             <div className="flex items-center gap-3">

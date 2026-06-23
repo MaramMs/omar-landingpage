@@ -17,19 +17,19 @@ export function SiteHeader() {
       {/* Top strip */}
   <div className="border-b border-gold/20 px-6 py-1 text-center  bg-[#a5957d] hidden">
         <p className="text-xs font-medium tracking-wide text-black">
-          خدمات معتمدة من وزارة العدل السعودية
+          خدمات معتمدة وموثقة من وزارة العدل
         </p>
       </div>
 
   <div className='mx-auto '>
       {/* Main nav */}
-      <nav className="flex items-center justify-between gap-4 p-4  sm:px-8 lg:px-12 ">
+      <nav className="flex items-center justify-between gap-4 sm:px-8 lg:px-12 ">
         {/* Brand */}
         <Link href="#home" className="shrink-0 leading-none">
           {/* <span className="font-heading text-2xl font-bold text-gold-gradient">
             عمر المشعلي
           </span> */}
-          <Image src='/images/logo.png' alt='عمر المشعلي' width={150} height={150}/>
+          <Image src='/images/logoSite.png' alt='عمر المشعلي' width={200} height={200} className='w-[150px] h-[150px] object-cover '/>
         </Link>
 
         {/* Links */}

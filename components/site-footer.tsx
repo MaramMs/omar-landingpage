@@ -51,22 +51,22 @@ export function SiteFooter() {
           <ul className="flex flex-col md:flex-row justify-center gap-10 align-middle mt-4  text-sm text-foreground/75">
             <li className="flex items-center  gap-2">
               <Phone className="size-4 text-gold" aria-hidden="true" />
-              <span>جوال: 966 56 559 3414+</span>
+              <span>جوال: 0556080822  </span>
             </li>
             <li className="flex items-center  gap-2">
               <Mail className="size-4 text-gold" aria-hidden="true" />
-              <span>بريد إلكتروني: email comtent.oim</span>
+              <span>بريد إلكتروني: almeshali.law@gmail.com </span>
             </li>
             <li className="flex items-center gap-2">
               <MessageCircle className="size-4 text-gold" aria-hidden="true" />
               <span>واتساب: 
               <Link
-      href="https://wa.me/96656559341"
+      href="https://wa.me/966556080822"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:underline"
     >
-      +966 56 559 341
+      +966 55 608 0822
     </Link>
               </span>
             </li>
@@ -79,8 +79,8 @@ export function SiteFooter() {
 
       <div className="border-t border-gold/15 px-8 py-4 text-center">
         <p className="text-xs text-foreground/55">
-          © 2026 عمر المشعلي. جميع الحقوق محفوظة
-        </p>
+ © 2026  . جميع الحقوق محفوظة
+        </p>  
       </div>
     </footer>
   )

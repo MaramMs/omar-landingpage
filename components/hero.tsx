@@ -14,10 +14,10 @@ export function Hero() {
 
      <Image
         src="/images/fullHero.png"
-        alt=""
+        alt="Hero Background"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-center opacity-90 scale-105"
         sizes="100vw"
       />
 
@@ -32,14 +32,14 @@ export function Hero() {
         <div className="flex flex-col text-right w-full px-6 sm:px-10 lg:w-[55%] xl:w-[50%] lg:px-0 lg:pr-14 xl:pr-20 py-12 lg:py-16">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-sm font-medium text-gold w-fit mb-6  shadow-[0_0_15px_rgba(var(--gold-rgb),0.1)]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-sm font-medium text-gold w-fit  mx-auto shadow-[0_0_15px_rgba(var(--gold-rgb),0.1)]">
             <ShieldCheck className="h-4 w-4" />
             <span >   موثق  ومعتمد من وزارة العدل</span>
           </div>
 
           {/* Heading */}
 
-          <Image src="/images/logoSite.png" alt='text' width={500} height={200} className='lg:w-[900px] h-[200px] w-[200px] object-cover '/>
+          <Image src="/images/logoSite.png" alt='عمر المشعلي' width={800} height={300} className='w-auto h-[100px] sm:h-[140px] lg:h-[200px] max-w-full object-cover drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)] mb-6'/>
           <h1 className="font-heading text-4xl font-black leading-[1.4] sm:text-5xl lg:text-[3.2rem] lg:leading-[1.5]">
             {/* <span className="text-gold-gradient block mb-1">
               عمر المشعلي |{" "}

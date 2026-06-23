@@ -29,7 +29,7 @@ export function SiteHeader() {
           {/* <span className="font-heading text-2xl font-bold text-gold-gradient">
             عمر المشعلي
           </span> */}
-          <Image src='/images/logoSite.png' alt='عمر المشعلي' width={200} height={200} className='w-[150px] h-[150px] object-cover '/>
+          <Image src='/images/logoSite.png' alt='عمر المشعلي' width={400} height={120} className='w-[320px] h-[100px]  object-cover cursor-pointer'/>
         </Link>
 
         {/* Links */}

@@ -20,8 +20,8 @@ const licenses = [
     description: 'توثيق كافة العقود والإقرارات والوكالات بموجب ترخيص التوثيق.',
   },
   {
-    icon: '/images/ser4.png',
-    title: 'ناجز',
+    icon: '/images/ser3.png',
+    title: 'السجل العقاري',
     licenseNumber: 'ترخيص رقم: (2223000151)',
     description: 'تسجيل الملكيات العقارية وإنهاء الإجراءات في السجل العقاري.',
   }

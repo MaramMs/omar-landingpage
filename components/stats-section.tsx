@@ -27,12 +27,12 @@ export function StatsSection() {
             })}
           </div>
           
-          <div className="mt-12 border-t border-white/10 pt-8 text-center">
+          {/* <div className="mt-12 border-t border-white/10 pt-8 text-center">
             <div className="inline-flex items-center flex-wrap justify-center gap-3 rounded-full bg-white/5 px-6 py-3 text-sm text-gold/90 font-bold border border-white/5 backdrop-blur-sm">
               <ShieldCheck className="h-5 w-5" />
               <span>اعتماد رسمي: رقم ترخيص الموثق (41/1946) | رقم رخصة المسجل العقاري (2223000151) | رقم رخصة المأذون الشرعي (14221) </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

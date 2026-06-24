@@ -7,9 +7,10 @@ import { TestimonialsSection } from '@/components/testimonials-section'
 import { SiteFooter } from '@/components/site-footer'
 import { FaqSection } from '@/components/FQA'
 import { StatsSection } from '@/components/stats-section'
-import { AboutSection } from '@/components/about-section'
 import { UseCasesSection } from '@/components/use-cases-section'
 import { StickyWhatsapp } from '@/components/sticky-whatsapp'
+import { LicensesSection } from '@/components/licenses-section'
+import { FadeIn } from '@/components/fade-in'
 
 export default function Page() {
   return (
@@ -17,14 +18,14 @@ export default function Page() {
         <SiteHeader />
         <Hero />
       <main className=" flex flex-col gap-10 pb-10">
-        <ServicesSection />
-        <StatsSection />
-        {/* <AboutSection /> */}
-        <UseCasesSection />
-        <FeaturesSection />
-        <TestimonialsSection />
-        <WorkflowSection />
-        <FaqSection />
+        <FadeIn><LicensesSection /></FadeIn>
+        <FadeIn><ServicesSection /></FadeIn>
+        <FadeIn><StatsSection /></FadeIn>
+        <FadeIn><UseCasesSection /></FadeIn>
+        <FadeIn><WorkflowSection /></FadeIn>
+        <FadeIn><TestimonialsSection /></FadeIn>
+        <FadeIn><FeaturesSection /></FadeIn>
+        <FadeIn><FaqSection /></FadeIn>
       </main>
         <SiteFooter />
         <StickyWhatsapp />

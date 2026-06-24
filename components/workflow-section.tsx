@@ -60,7 +60,7 @@ export function WorkflowSection() {
 
               {index < steps.length - 1 && (
                 <ArrowLeft
-                  className="size-7 shrink-0 rotate-90 text-gold/60 md:rotate-0"
+                  className="size-7 shrink-0 -rotate-90 text-gold/60 md:rotate-0"
                   aria-hidden="true"
                 />
               )}

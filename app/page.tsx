@@ -10,7 +10,7 @@ import { StatsSection } from '@/components/stats-section'
 import { UseCasesSection } from '@/components/use-cases-section'
 import { StickyWhatsapp } from '@/components/sticky-whatsapp'
 import { LicensesSection } from '@/components/licenses-section'
-import { FadeIn } from '@/components/fade-in'
+import { FadeIn, FadeUp } from '@/components/Animations'
 
 export default function Page() {
   return (
@@ -18,14 +18,14 @@ export default function Page() {
         <SiteHeader />
         <Hero />
       <main className=" flex flex-col gap-10 pb-10">
-        <FadeIn><LicensesSection /></FadeIn>
-        <FadeIn><ServicesSection /></FadeIn>
-        <FadeIn><StatsSection /></FadeIn>
-        <FadeIn><UseCasesSection /></FadeIn>
-        <FadeIn><WorkflowSection /></FadeIn>
-        <FadeIn><TestimonialsSection /></FadeIn>
-        <FadeIn><FeaturesSection /></FadeIn>
-        <FadeIn><FaqSection /></FadeIn>
+        <LicensesSection />
+        <ServicesSection />
+        <StatsSection />
+        <UseCasesSection />
+        <FadeUp><WorkflowSection /></FadeUp>
+        <TestimonialsSection />
+        <FadeUp><FeaturesSection /></FadeUp>
+        <FadeUp><FaqSection /></FadeUp>
       </main>
         <SiteFooter />
         <StickyWhatsapp />

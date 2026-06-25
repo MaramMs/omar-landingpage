@@ -1,5 +1,6 @@
 import { Star, Quote, CheckCircle } from 'lucide-react'
 import { SectionHeading } from './section-heading'
+import { FadeUp, StaggerContainer, StaggerItem } from './Animations'
 
 const testimonials = [
   {
@@ -27,12 +28,13 @@ export function TestimonialsSection() {
     <section id="testimonials" className="py-14 sm:py-20 p-4 sm:px-8 lg:px-12 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 -z-10 h-[500px] w-[500px] rounded-full bg-gold/5 blur-[120px]" />
-      
-      <SectionHeading>ثقة عملائنا، وسام نعتز به</SectionHeading>
+      <FadeUp delay={0.1}> 
+              <SectionHeading>ثقة عملائنا، وسام نعتز به</SectionHeading>
+              </FadeUp>
 
-      <div className="mx-auto mt-12 grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <StaggerContainer className="mx-auto mt-12 grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((testimonial, index) => (
-          <div 
+          <StaggerItem
             key={index}
             className="group relative flex flex-col rounded-3xl bg-card/30 backdrop-blur-md border border-white/5 p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(200,160,100,0.1)] hover:border-gold/30 hover:bg-card/50"
           >
@@ -63,9 +65,9 @@ export function TestimonialsSection() {
                 <span className="text-xs text-foreground/60 mt-0.5">{testimonial.role}</span>
               </div>
             </div>
-          </div>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerContainer>
     </section>
   )
 }

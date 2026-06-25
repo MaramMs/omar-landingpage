@@ -4,6 +4,7 @@ import ser1 from '@/public/images/ser1.png'
 import ser2 from '@/public/images/ser2.png'
 import ser3 from '@/public/images/ser3.png'
 import Image from 'next/image'
+import { FadeUp, StaggerContainer, StaggerItem } from './Animations'
 
 const services = [
   {
@@ -29,13 +30,16 @@ const services = [
 export function ServicesSection() {
   return (
     <section id="services" className=" py-14 sm:py-20 p-4  sm:px-8 lg:px-12">
+      <FadeUp delay={0.1}>
       <SectionHeading>خدماتنا العدلية المتكاملة</SectionHeading>
 
-      <div className="mx-auto mt-10 grid  gap-6 md:grid-cols-3 ">
+      </FadeUp>
+
+      <StaggerContainer className="mx-auto mt-10 grid  gap-6 md:grid-cols-3 ">
         {services.map((service) => {
           const Icon = service.icon
           return (
-            <article
+            <StaggerItem
               key={service.title}
               className="border-gold-gradient flex flex-col rounded-2xl bg-card p-6 text-right shadow-lg transition-transform hover:-translate-y-1"
             >
@@ -63,10 +67,10 @@ export function ServicesSection() {
                   </li>
                 ))}
               </ul>
-            </article>
+            </StaggerItem>
           )
         })}
-      </div>
+      </StaggerContainer>
     </section>
   )
 }

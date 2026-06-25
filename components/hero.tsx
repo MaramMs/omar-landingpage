@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ShieldCheck, Scale, FileText } from 'lucide-react'
+import { FadeInRight } from './Animations'
 
 export function Hero() {
   return (
@@ -21,15 +22,12 @@ export function Hero() {
         sizes="100vw"
       />
 
-      {/* ── RIGHT-SIDE TEXT OVERLAY (desktop) ── */}
-      <div className="absolute inset-0 bg-gradient-to-l from-[#081425]/90 via-[#081425]/70 to-[#081425]/70 hidden lg:block" />
-      {/* <div className="absolute inset-0 bg-gradient-to-l from-[#081425] via-[#081425]/60 to-transparent hidden lg:block" /> */}
+      <div className="absolute inset-0 bg-gradient-to-l from-[#081425]/90 via-[#081425]/50 to-[#081425]/50 hidden lg:block" />
 
-      {/* ── Full overlay on mobile so text stays readable ── */}
-      <div className="absolute inset-0 bg-[#08111f]/80 lg:hidden" />
+      <div className="absolute inset-0 bg-[#08111f]/60 lg:hidden" />
 
       {/* ── CONTENT ── */}
-      <div className="relative z-10 flex items-center justify-start min-h-[560px] lg:min-h-[620px]">
+      <FadeInRight delay={0.2} className="relative z-10 flex items-center justify-start min-h-[560px] lg:min-h-[620px]">
         <div className="flex flex-col text-center w-full px-6 sm:px-10 lg:w-[55%] xl:w-[50%] lg:px-0 lg:pr-14 xl:pr-20 py-12 lg:py-16">
 
           {/* Badge */}
@@ -41,13 +39,13 @@ export function Hero() {
           {/* Heading */}
 
           <Image src="/images/logoSite.png" alt='عمر المشعلي' width={800} height={300} className='w-auto h-[100px] sm:h-[140px] lg:h-[200px] max-w-full object-cover drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)] mb-6'/>
-          <h1 className="font-heading text-[25px] font-black leading-[1.9] sm:text-5xl lg:text-[3.2rem] lg:leading-[1.5]">
+          <h1 className="font-heading text-[28px] font-black leading-[1.9] sm:text-5xl lg:text-[3.2rem] lg:leading-[1.5]">
           
             <span className="text-foreground block"> موثق معتمد ومسجل عقاري  ومأذون شرعي </span>
           </h1>
 
           {/* Body */}
-          <p className="mt-8 md:mx-auto w-full md:w-[66%] text-center md:text-right leading-relaxed text-foreground/80 sm:text-lg ">
+          <p className="md:mt-8 md:mx-auto w-full md:w-[66%] text-center md:text-right leading-relaxed text-foreground/80 sm:text-lg ">
             توثيق حقوقك وإتمام عقودك الشرعية بموثوقية، سرعة، وسرية تامة.
             خدمات عدلية متكاملة معتمدة من وزارة العدل تصلك حيثما كنت.
           </p>
@@ -70,7 +68,7 @@ export function Hero() {
           </div>
 
           {/* Feature strip */}
-          <div className="mt-10 flex flex-wrap gap-6 border-t border-white/10 pt-8 justify-center">
+          <div className="mt-10 flex flex-wrap gap-2 md:gap-6 border-t border-white/10 pt-8 justify-start md:justify-center">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
                 <Scale className="h-5 w-5" />
@@ -101,7 +99,7 @@ export function Hero() {
           </div>
 
         </div>
-      </div>
+      </FadeInRight>
      </div>
     </section>
 

@@ -3,6 +3,7 @@
 import { Building2, FileSignature, Landmark } from 'lucide-react'
 import { SectionHeading } from './section-heading'
 import Image from 'next/image'
+import { FadeUp, StaggerContainer, StaggerItem } from './Animations'
 
 
 
@@ -30,13 +31,16 @@ const licenses = [
 export function LicensesSection() {
   return (
     <section id="licenses" className="py-14 sm:py-20 p-4 sm:px-8 lg:px-12 bg-muted/30">
+      <FadeUp delay={0.1}>
       <SectionHeading>التراخيص والاعتمادات الرسمية</SectionHeading>
 
-      <div className="mx-auto mt-10 grid gap-6 md:grid-cols-3 max-w-5xl">
+      </FadeUp>
+
+      <StaggerContainer className="mx-auto mt-10 grid gap-6 md:grid-cols-3 max-w-5xl">
         {licenses.map((license) => {
           const Icon = license.icon
           return (
-            <article
+            <StaggerItem
               key={license.title}
               className="border-gold-gradient flex flex-col items-center justify-center rounded-2xl bg-card p-8 text-center shadow-lg transition-transform hover:-translate-y-1 relative overflow-hidden group"
             >
@@ -59,10 +63,10 @@ export function LicensesSection() {
               <p className="text-sm leading-relaxed text-foreground/70">
                 {license.description}
               </p>
-            </article>
+            </StaggerItem>
           )
         })}
-      </div>
+      </StaggerContainer>
     </section>
   )
 }

@@ -41,6 +41,16 @@ const faqs = [
   {
     question: 'هل الرسوم موحدة أم تختلف حسب الخدمة؟',
     answer: 'تختلف الرسوم بناءً على نوع الخدمة المطلوبة ومكان التنفيذ. يمكنكم التواصل معنا لتحديد الخدمة وسنقوم بتزويدكم بالتسعيرة المناسبة بكل شفافية.'
+  },
+  {
+    question: 'ما هي شروط الافراغ العقاري ؟',
+    answer: [
+      'هوية البائع والمشتري أو وجود وكيل شرعي لكل منهما.',
+      'وجود صك الملكية الإلكتروني للعقار.',
+      'سريان الهوية الوطنية أو الإقامة المميزة للطرفين.',
+      'تقديم شيك مصدق أو إثبات حوالة بنكية بقيمة العقار وفق ما يتم الاتفاق عليه بين الطرفين.',
+      'سداد ضريبة التصرفات العقارية إن كانت مستحقة أو وجود شهادة إعفاء من الضريب.'
+    ]
   }
 ]
 
@@ -72,9 +82,19 @@ export function FaqSection() {
               className={`grid transition-all duration-300 ease-in-out ${openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
             >
               <div className="overflow-hidden">
-                <p className="px-6 pb-6 text-sm leading-relaxed text-foreground/75">
-                  {faq.answer}
-                </p>
+                {Array.isArray(faq.answer) ? (
+                  <ul className="px-6 pb-6 space-y-2 text-sm leading-relaxed text-foreground/75">
+                    {faq.answer.map((point, i) => (
+                      <li key={i} className="list-disc mr-4">
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="px-6 pb-6 text-sm leading-relaxed text-foreground/75">
+                    {faq.answer}
+                  </p>
+                )}
               </div>
             </div>
           </div>

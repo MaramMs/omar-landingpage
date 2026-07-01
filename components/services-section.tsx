@@ -5,6 +5,7 @@ import ser2 from '@/public/images/ser2.png'
 import ser3 from '@/public/images/ser3.png'
 import Image from 'next/image'
 import { FadeUp, StaggerContainer, StaggerItem } from './Animations'
+import Link from 'next/link'
 
 const services = [
   {
@@ -39,15 +40,23 @@ export function ServicesSection() {
         {services.map((service) => {
           const Icon = service.icon
           return (
+
+            
             <StaggerItem
               key={service.title}
-              className="border-gold-gradient flex flex-col rounded-2xl bg-card p-6 text-right shadow-lg transition-transform hover:-translate-y-1"
-            >
+              className="border-gold-gradient flex flex-col rounded-2xl bg-card p-6 text-right shadow-lg transition-transform hover:-translate-y-1 hover:no-underline"
+              >
+            <Link
+               href="https://wa.me/966556080822"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="hover:no-underline"
+             >
               <div className="flex items-center flex-col justify-center gap-3">
               <span className="flex items-center justify-center overflow-hidden rounded-2xl  border-2 border-gold/40 shadow-[0_4px_20px_rgba(200,160,100,0.2)] w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] relative group-hover:shadow-[0_8px_30px_rgba(200,160,100,0.4)] group-hover:-translate-y-1 transition-all duration-300 mb-2">
                   <Image src={service.icon} alt={service.title} fill className='object-contain p-2' aria-hidden="true" />
                 </span>
-                <h3 className="font-heading text-xl font-bold text-foreground">
+                <h3 className="font-heading text-xl font-bold text-foreground hover:no-underline">
                   {service.title}
                 </h3>
             
@@ -67,6 +76,7 @@ export function ServicesSection() {
                   </li>
                 ))}
               </ul>
+                    </Link>
             </StaggerItem>
           )
         })}
